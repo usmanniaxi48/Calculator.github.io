@@ -41,6 +41,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+
+    .equal-btn {
+    grid-column: span 2;
+}
+
 .btn {
     font-size: 32px;
     width: 90px;
@@ -84,7 +89,8 @@ body {
         <button class="btn operator-btn" onclick="appendValue('+')">+</button>
         <button class="btn num-btn" onclick="appendValue('0')">0</button>
         <button class="btn num-btn" onclick="appendValue('.')">.</button>
-        <button class="btn operator-btn" onclick="calculate()">=</button>
+        <button class="btn operator-btn equal-btn" onclick="calculate()">=</button>
+
     </div>
 </div>
 <script>
